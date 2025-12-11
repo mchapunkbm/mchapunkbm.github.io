@@ -1,0 +1,337 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>PT Bumi Jaya Aruni — Modern Construction Company</title>
+  <meta name="description" content="Perusahaan konstruksi modern — desain, produksi pracetak, konstruksi, dan manajemen proyek." />
+  <!-- Tailwind via CDN (good for prototype). For production, build with PostCSS/Tailwind CLI. -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    :root {
+      --brand-yellow: #f7c600;
+      --brand-dark: #1a1a1a;
+      --brand-blue: #0c4a6e;
+    }
+    .hero-bg {
+      background-image: linear-gradient(90deg, rgba(12,74,110,0.15), rgba(247,198,0,0.1));
+    }
+    .accent { color: var(--brand-yellow); }
+  </style>
+</head>
+<body class="antialiased text-gray-800 bg-white">
+  <!-- NAVBAR -->
+  <header class="bg-white shadow-sm sticky top-0 z-50">
+    <div class="container mx-auto px-6 py-4 flex items-center justify-between">
+      <a href="#" class="flex items-center gap-3">
+        <div class="w-12 h-12 bg-gradient-to-tr from-[var(--brand-white)] to-[var(--brand-white)] rounded-lg flex items-center justify-center text-white font-bold"><img src="grip__1_-removebg-preview.png" alt=""></div>
+        <div>
+          <h1 class="text-lg font-semibold">PT Bumi Jaya Aruni</h1>
+          <p class="text-xs text-grey-500 -mt-1">Design . Built . Maintenance</p>
+        </div>
+      </a>
+
+      <nav class="hidden md:flex items-center gap-6 text-sm">
+        <a href="#about" class="hover:underline">Home</a>
+        <a href="#about" class="hover:underline">Meet B.J.A</a>
+        <a href="#services" class="hover:underline">Services</a>
+        <a href="#projects" class="hover:underline">Projects</a>
+        <a href="#contact" class="hover:underline">Contact Us</a>
+        <a href="#" class="ml-4 inline-block px-4 py-2 rounded bg-[var(--brand-blue)] text-white text-sm font-medium">Dapatkan Penawaran</a>
+      </nav>
+
+      <button id="mobileBtn" class="md:hidden p-2 rounded-lg focus:outline-none">
+        <!-- hamburger -->
+        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M4 6H20M4 12H20M4 18H14" stroke="#0f172a" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </button>
+    </div>
+    <!-- mobile menu -->
+    <div id="mobileMenu" class="hidden md:hidden bg-white border-t">
+      <div class="px-6 py-4 flex flex-col gap-3">
+        <a href="#services" class="py-2">Layanan</a>
+        <a href="#projects" class="py-2">Proyek</a>
+        <a href="#about" class="py-2">Tentang</a>
+        <a href="#contact" class="py-2">Kontak</a>
+        <a href="#" class="py-2 bg-[var(--brand-blue)] text-white text-center rounded">Dapatkan Penawaran</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero-bg py-20">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-10 items-center">
+      <div>
+        <h2 class="text-4xl md:text-5xl font-extrabold leading-tight">Solusi Konstruksi Modern<br class="hidden md:block"> untuk Infrastruktur & Bangunan</h2>
+        <p class="mt-6 text-gray-600 max-w-xl">Kami memiliki komitmen besar untuk maju dan berkembang pada setiap proyek atau pekerjaan yang ditangani, dalam hal biaya, kualitas, waktu dan memuaskan pelayanan kepada pelanggan.</p>
+
+        <div class="mt-8 flex flex-wrap gap-4">
+          <a href="#contact" class="inline-block px-6 py-3 bg-[var(--brand-yellow)] text-black text-white rounded-lg font-medium">Hubungi Kami</a>
+          <a href="#projects" class="inline-block px-6 py-3 border border-gray-200 rounded-lg">Lihat Proyek</a>
+        </div>
+
+        <div class="mt-8 grid grid-cols-3 gap-4 max-w-sm">
+          <div class="text-center">
+            <div class="text-2xl font-bold">200+</div>
+            <div class="text-xs text-gray-500">Proyek Selesai</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold">30+</div>
+            <div class="text-xs text-gray-500">Klien Korporat</div>
+          </div>
+          <div class="text-center">
+            <div class="text-2xl font-bold">15</div>
+            <div class="text-xs text-gray-500">Cabang & Pabrik</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="relative">
+        <div class="rounded-xl overflow-hidden shadow-xl">
+          <img autoplay loop muted src="background_image1764667643.jpg" alt="construction site" class="w-full h-80 object-cover"></img>
+        </div>
+        <div class="absolute bottom-4 left-4 bg-white/90 p-4 rounded-lg shadow-md border">
+          <div class="text-xs text-gray-500">Proyek unggulan</div>
+          <div class="font-semibold">Dapatkan Penawaran Proyek Anda</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section id="services" class="container mx-auto px-6 py-16">
+    <div class="max-w-3xl">
+      <h3 class="text-2xl font-bold">Layanan Kami</h3>
+      <p class="mt-3 text-gray-600">Dari desain awal hingga produksi pracetak dan konstruksi di lapangan — layanan terintegrasi untuk mempercepat jadwal dan menurunkan biaya tanpa mengorbankan kualitas.</p>
+    </div>
+
+    <div class="mt-8 grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+      <!-- Card 1 -->
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-sky-100 rounded flex items-center justify-center">🏗️</div>
+          <div>
+            <h4 class="font-semibold">Desain & BIM</h4>
+            <p class="text-xs text-gray-500">Model 3D, koordinasi MEP, dan simulasi konstruksi.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-emerald-100 rounded flex items-center justify-center">🏭</div>
+          <div>
+            <h4 class="font-semibold">Produksi Precast</h4>
+            <p class="text-xs text-gray-500">Box culvert, panel dinding, dan elemen struktur pracetak berkualitas pabrik.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-orange-100 rounded flex items-center justify-center">🛠️</div>
+          <div>
+            <h4 class="font-semibold">Konstruksi & Manajemen</h4>
+            <p class="text-xs text-gray-500">Pelaksanaan, quality control, dan manajemen pengadaan.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-purple-100 rounded flex items-center justify-center">📊</div>
+          <div>
+            <h4 class="font-semibold">Logistik & Pengadaan</h4>
+            <p class="text-xs text-gray-500">Rantai pasokan material, transportasi elemen pracetak, dan stok pabrik.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-rose-100 rounded flex items-center justify-center">🔒</div>
+          <div>
+            <h4 class="font-semibold">Keselamatan Kerja</h4>
+            <p class="text-xs text-gray-500">Program HSE, monitoring lapangan, dan pelatihan pekerja.</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="border rounded-lg p-6 hover:shadow-lg transition">
+        <div class="flex items-center gap-4">
+          <div class="w-12 h-12 bg-yellow-100 rounded flex items-center justify-center">📐</div>
+          <div>
+            <h4 class="font-semibold">Konsultansi Teknik</h4>
+            <p class="text-xs text-gray-500">Perhitungan struktur, geoteknik, dan optimasi elemen pracetak.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section id="projects" class="bg-gray-50 py-16">
+    <div class="container mx-auto px-6">
+      <div class="flex items-center justify-between">
+        <div>
+          <h3 class="text-2xl font-bold">Proyek Terbaru</h3>
+          <p class="text-gray-600">Proyek infrastruktur, bangunan komersial, dan fabrikasi pracetak.</p>
+        </div>
+        <a href="#" class="text-sm text-[var(--brand-blue)]">Lihat semua proyek →</a>
+      </div>
+
+      <div class="mt-8 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
+        <!-- Project Card -->
+        <article class="bg-white rounded-lg overflow-hidden shadow">
+          <img src="https://images.unsplash.com/photo-1501594907352-04cda38ebc29?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="project" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="font-semibold">Jembatan Modular Pelabuhan</h4>
+            <p class="text-sm text-gray-500 mt-2">Elemen pracetak dipasang dalam 3 minggu, pengurangan jadwal 40%.</p>
+            <div class="mt-4 flex items-center justify-between text-xs text-gray-500">
+              <span>Klien: Pelindo</span>
+              <span>2025</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg overflow-hidden shadow">
+          <img src="https://images.unsplash.com/photo-1497366811353-6870744d04b2?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="project" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="font-semibold">Gedung Perkantoran GreenTech</h4>
+            <p class="text-sm text-gray-500 mt-2">Fasad panel pracetak, efisiensi panas 25%.</p>
+            <div class="mt-4 flex items-center justify-between text-xs text-gray-500">
+              <span>Klien: PT. Green</span>
+              <span>2024</span>
+            </div>
+          </div>
+        </article>
+
+        <article class="bg-white rounded-lg overflow-hidden shadow">
+          <img src="https://images.unsplash.com/photo-1476514525535-07fb3b4ae5f1?q=80&w=1200&auto=format&fit=crop&s=placeholder" alt="project" class="w-full h-48 object-cover">
+          <div class="p-5">
+            <h4 class="font-semibold">Sistem Drainase Perkotaan</h4>
+            <p class="text-sm text-gray-500 mt-2">Box culvert pracetak, pemasangan cepat, minim gangguan lalu lintas.</p>
+            <div class="mt-4 flex items-center justify-between text-xs text-gray-500">
+              <span>Klien: Pemda</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section id="about" class="container mx-auto px-6 py-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
+      <div>
+        <h3 class="text-2xl font-bold">Tentang Kami</h3>
+        <p class="mt-3 text-gray-600">Kami adalah perusahaan konstruksi yang berfokus pada solusi pracetak dan manajemen proyek. Menggabungkan engineering modern, kontrol kualitas pabrik, dan eksekusi lapangan yang terukur.</p>
+
+        <ul class="mt-6 space-y-3 text-sm text-gray-600">
+          <li>• Standar mutu ISO dan sistem QC internal.</li>
+          <li>• Pabrik pracetak dengan kapasitas besar dan fasilitas curing modern.</li>
+          <li>• Tim engineering berpengalaman di infrastruktur dan bangunan komersial.</li>
+        </ul>
+      </div>
+      <div>
+        <div class="bg-gradient-to-tr from-sky-100 to-emerald-50 p-6 rounded-lg">
+          <h4 class="font-semibold">Visi</h4>
+          <p class="mt-2 text-sm text-gray-600">Menjadi pelopor solusi konstruksi pracetak yang efisien, aman, dan berkelanjutan di kawasan.</p>
+
+          <h4 class="mt-4 font-semibold">Misi</h4>
+          <ol class="mt-2 text-sm text-gray-600 list-decimal list-inside">
+            <li>Meningkatkan produktivitas melalui desain modular.</li>
+            <li>Mengurangi dampak lingkungan lewat efisiensi material.</li>
+            <li>Mengutamakan keselamatan dan kualitas di setiap tahap.</li>
+          </ol>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="bg-sky-50 py-16">
+    <div class="container mx-auto px-6">
+      <div class="grid grid-cols-1 md:grid-cols-2 gap-8 items-start">
+        <div>
+          <h3 class="text-2xl font-bold">Kontak & Penawaran</h3>
+          <p class="mt-3 text-gray-600">Kirim detail proyek Anda dan kami akan menyiapkan perkiraan biaya serta timeline.</p>
+
+          <div class="mt-6 space-y-4 text-sm">
+            <div>
+              <div class="font-semibold">Kantor Pusat</div>
+              <div class="text-gray-600">AD Premier, Lantai 17 Suite 04 B, Jl. TB Simatupang No. 5, RT/RW 005/007, Ragunan, Pasar Minggu, Kota Jakarta Selatan, Daerah Khusus Ibukota Jakarta 12550.</div>
+            </div>
+            <div>
+              <div class="font-semibold">Email</div>
+              <div class="text-gray-600">gropasindonusapersada@gmail.com</div>
+            </div>
+            <div>
+              <div class="font-semibold">Telepon</div>
+              <div class="text-gray-600">(+62) 812-3012-9646</div>
+              <div class="text-gray-600">(+62) 821-2200-9253</div>
+            </div>
+          </div>
+
+        </div>
+
+        <form class="bg-white p-6 rounded-lg shadow" onsubmit="event.preventDefault(); alert('Terima kasih! Kami akan menghubungi Anda.');">
+          <label class="block text-xs font-medium text-gray-700">Nama</label>
+          <input required class="mt-1 block w-full border rounded p-2 text-sm" placeholder="Nama Anda">
+
+          <label class="block text-xs font-medium text-gray-700 mt-4">Email</label>
+          <input type="email" required class="mt-1 block w-full border rounded p-2 text-sm" placeholder="email@contoh.com">
+
+          <label class="block text-xs font-medium text-gray-700 mt-4">Deskripsi Proyek</label>
+          <textarea required class="mt-1 block w-full border rounded p-2 text-sm" rows="4" placeholder="Ceritakan singkat proyek Anda..."></textarea>
+
+          <div class="mt-4 flex justify-end">
+            <button type="submit" class="px-4 py-2 bg-[var(--brand-yellow)] text-black text-white rounded">Kirim</button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-gray-900 text-gray-200 py-8">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-3 gap-6">
+      <div>
+        <div class="font-semibold">PT Gropas Indonusa Persada</div>
+        <div class="text-sm text-gray-400 mt-2">Solusi konstruksi pracetak & manajemen proyek — Kualitas, Kecepatan, Responsibilitas.</div>
+      </div>
+      <div>
+        <div class="font-semibold">Navigasi</div>
+        <ul class="mt-2 text-sm text-gray-400 space-y-1">
+          <li><a href="#services">Layanan</a></li>
+          <li><a href="#projects">Proyek</a></li>
+          <li><a href="#about">Tentang</a></li>
+          <li><a href="#contact">Kontak</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="font-semibold">Ikuti Kami</div>
+        <div class="mt-2 space-x-3">
+          <a href="#" aria-label="LinkedIn" class="text-gray-400 hover:text-white">LinkedIn</a>
+          <a href="#" aria-label="Instagram" class="text-gray-400 hover:text-white">Instagram</a>
+          <a href="#" aria-label="YouTube" class="text-gray-400 hover:text-white">YouTube</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container mx-auto px-6 mt-6 text-xs text-gray-500">© <span id="year"></span> PT Gropas Indonusa Persada — Semua hak cipta dilindungi.</div>
+  </footer>
+
+  <script>
+    // mobile menu toggle
+    const btn = document.getElementById('mobileBtn');
+    const menu = document.getElementById('mobileMenu');
+    btn.addEventListener('click', () => menu.classList.toggle('hidden'));
+
+    // footer year
+    document.getElementById('year').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>
